@@ -30,24 +30,24 @@ html,body{
 .header {
   width: 100vw;
   height: 15vh;
-  padding: 20px 0;
+  padding: 5vh ;
   background: #161616;
   color: #fff;
   box-sizing: border-box;
 }
-.header h1,
-.contents h1 {
-  margin-bottom: 30px;
-  font-size: 20px;
+.header h1 {
+  //margin-bottom: 30px;
+  float: left;
+  font-size: 5vh;
 }
 
 /* 開閉用ボタン ※ボタンの細かいスタイルは省略 */
 .side-menu-btn {
   position: fixed;
   top: 2vh;
-  right: 3vw;
-  width: 9vh;
-  height: 9vh;
+  right: 2vh;
+  width: 10vh;
+  height: 10vh;
   padding: 5px;
   background: #ccc;
   cursor: pointer;
