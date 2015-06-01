@@ -36,7 +36,7 @@ ul,li{
     float:left;
     height:45%;
     width:22%;
-    font-size: 100%;
+    font-size: 4vmin;
     background-color:red;
     border:outset 3px;
     font-family: Impact, Charcoal, sans-serif;
@@ -128,11 +128,12 @@ body{
     width: 60%;
     list-style: none; 
     z-index: 9;
-    
+    font-size: 200%;
 }
-.zoom.class{
+.zoom > .class{
     word-wrap: break-word;
     letter-spacing: 300px;
+    font-size: 4vmin;
 }
 
 /*
