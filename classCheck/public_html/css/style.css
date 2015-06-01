@@ -1,7 +1,3 @@
-p{
-
-}
-
 *{
     margin: 0;
 
@@ -13,7 +9,7 @@ ul,li{
 
 
 html,body{
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -28,11 +24,12 @@ html,body{
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   z-index: 2;
+   background-image: url("../img/background-img-main.jpg");
 }
 /* メインコンテンツ内のスタイル ※デザインに併せて適当に */
 .header {
-  width: 100%;
-  height: 60px;
+  width: 100vw;
+  height: 15vh;
   padding: 20px 0;
   background: #161616;
   color: #fff;
@@ -43,30 +40,49 @@ html,body{
   margin-bottom: 30px;
   font-size: 20px;
 }
-.contents {
-  width: 100%;
-  height: -webkit-calc(100% - 60px);
-  height: -moz-calc(100% - 60px);
-  box-sizing: border-box;
+
+/* 開閉用ボタン ※ボタンの細かいスタイルは省略 */
+.side-menu-btn {
+  position: fixed;
+  top: 2vh;
+  right: 3vw;
+  width: 9vh;
+  height: 9vh;
+  padding: 5px;
+  background: #ccc;
+  cursor: pointer;
+  z-index: 4;
 }
 
-.main_contents{
-    margin: auto;
-    width: 300px;
+.side-menu-btn > img{
+    width: 100%;
     height:100%;
+}
+.contents {
+   
+    width: 100%;
+    height: 360px;
+    box-sizing: border-box;
+}
+
+.main_contents{ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height:75vh;
 }
 
 .main{
     float: left;
     background-color: red;
-    width: 240px;
+    width: 80%;
     height: 100%;
 }
 
 .slide-bar{
     float: left;
     background-color: blue;
-    width: 60px;
+    width: 20%;
     height: 100%;
 }
 
@@ -78,19 +94,93 @@ html,body{
     position: absolute;
     margin-top: 10px;
     margin-left: 7px;
-    margin-bottom:100px;
 }
 .contents p {
   margin-bottom: 50px;
 }
 
+.footer{
 
-@media(min-width:360px) and (max-width:420px){
+    width: 100%;
+    height: 10vh;
+    background-color: cyan;
+}
+
+
+/*@media(min-width:360px) and (max-width:420px){
     .main_contents{
-        width:360px;
+        width:340px;
+        height:408px;
     }
     .main{
-        width: 300px;
+        width: 280px;
     }
 }
 
+@media(min-width:421px) and (max-width:500px){
+     .main_contents{
+        width:400px;
+        height:480px;
+    }
+    .main{
+        width: 340px;
+    }
+}
+
+@media(min-width:501px) and (max-width:600px){
+    .header{
+        height: 80px;
+        padding: 30px;
+    }
+   
+    .header h1{
+        font-size: 25px;
+    }
+    
+    .side-menu-btn{
+        top:10px;
+        right: 10px;
+        width : 50px;
+        height: 50px;
+    }
+    
+     .main_contents{
+        width:480px;
+        height: 588px;
+    }
+    .main{
+        width: 420px;   
+    }
+    .footer{
+        height: 150px;  
+    }
+    
+    .side-menu{}
+    
+}
+
+@media(min-width:601px) and (max-width:700px){
+     .main_contents{
+        width:580px;
+        height: 696px;
+    }
+    .main{
+        width: 520px;   
+    }
+    .footer{
+        height: 150px;  
+    }
+}
+
+@media(min-width:701px) and (max-width:800px){
+     .main_contents{
+        width:680px;
+        height: 936px;
+    }
+    .main{
+        width: 620px;   
+    }
+    .footer{
+        height: 250px;  
+    }
+}*/
