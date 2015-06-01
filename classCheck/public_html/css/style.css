@@ -94,6 +94,10 @@ html,body{
     position: absolute;
     margin-top: 10px;
     margin-left: 7px;
+<<<<<<< HEAD
+=======
+    margin-bottom: 300px;
+>>>>>>> origin/master
 }
 .contents p {
   margin-bottom: 50px;
