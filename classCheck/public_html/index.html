@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>map3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+        <script src="Scripts/map.js"></script>
+    <script>
+    $(function () {
+      var $body = $('body');
+      $('#js__sideMenuBtn').on('click', function () {
+        $body.toggleClass('side-open');
+        $('#js__overlay').on('click', function () {
+          $body.removeClass('side-open');
+        });
+      });
+    });
+    $(function(){
+        $(".setting").click(function(){
+            $(".result").text($(".day:checked").val());
+        });
+    });
+    </script>
+         <link rel="stylesheet" type="text/css" href="css/radio.css">
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+         <link rel="stylesheet" type="text/css" href="css/side.css">
+         <link rel="stylesheet" type="text/css" href="css/map.css">
+    </head>
+    <body>
+        <div class="overlay" id="js_overlay"></div>
+        
+        <div class="side-menu">
+            <h1>検索条件</h1>
+            <form class="setting">
+                <fieldset>
+                    <legend>曜日</legend>
+                    <div class="items">
+                        <div class="radio">
+                            <input type="radio" name="day" class="day" id="day1" value="月" >
+                            <label for="day1">月</label>
+                            <input type="radio" name="day" class="day" id="day2" value="火" >
+                            <label for="day2">火</label>
+                            <input type="radio" name="day" class="day" id="day3" value="水" >
+                            <label for="day3">水</label>
+                            <input type="radio" name="day" class="day" id="day4" value="木" >
+                            <label for="day4">木</label>
+                            <input type="radio" name="day" class="day" id="day5" value="金" >
+                            <label for="day5">金</label>
+                            <input type="radio" name="day" class="day" id="day6" value="土" >
+                            <label for="day6">土</label>
+                            <input type="radio" name="day" class="day" id="day7" value="日" >
+                            <label for="day7">日</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend id="time">時間</legend>
+                    <div class="items">
+                        <div class="start">
+                            <span>開始時間</span>
+                            <select name="start_h">
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                            </select>
+                            <span>：</span>
+                            <select name="start_m">
+                                <option>00</option>
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>40</option>
+                                <option>50</option>
+                            </select>
+                        </div>
+                        <div class="end">
+                            <span >終了時間</span>
+                            <select name="end_h">
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                            </select>
+                            <span>：</span>
+                            <select name="end_m">
+                                <option>00</option>
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>40</option>
+                                <option>50</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>教室</legend>
+                    <div class="items">
+                        <div class="radio">
+                            <input type="radio" name="type" id="type1" value="1" >
+                            <label for="type1"><p>普通<br></p></label>
+                            <input type="radio" name="type" id="type2" value="2" >
+                            <label for="type2">実習(mac)</label>
+                            <input type="radio" name="type" id="type3" value="3" >
+                            <label for="type3">実習(win)</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="radio reset" >
+                    <input type="reset" name="reset" id="reset" >
+                    <label for="reset">初期設定に戻す</label>
+                </div>
+                <div class="radio search">
+                    <input type="submit" name="search" id="search" >
+                    <label for="search">検索</label>
+                </div>
+            </form>
+        </div>
+        
+        <div class="side-menu-btn" id="js__sideMenuBtn"><img src="img/setting.png"></div>
+        
+        
+        <!-- メインコンテンツ -->
+         <div class="wrapper">
+            <header class="header">
+                <h1>空き教室検索</h1>
+            </header>
+            <main class="contents">
+                <section class="main_contents">
+                    <div class="main">
+                        <ul class="map">
+                            <li class="floor floor9">
+                                <div class="class C9-D2">9-D</div>
+                                <div class="floornum">9F</div>
+                            </li>
+
+                            <li class="floor floor8">
+                                <div class="class C8-A loc1">8-A</div>
+                                <div class="class C8-B loc2">8-B</div>
+                                <div class="class C8-C loc3">8-C</div>
+                                <div class="class C8-D loc4">8-D</div>
+                                <div class="floornum">8F</div>
+                            </li>
+                            <li class="floor floor7">
+                                <div class="class C7-A loc1">7-A</div>
+                                <div class="class C7-B loc2">7-B</div>
+                                <div class="class C7-C loc3">7-C</div>
+                                <div class="class C7-D">7-D</div>
+                                <div class="floornum">7F</div>
+                            </li>
+                            <li class="floor floor6">
+                                <div class="class C6-A loc1">6-A</div>
+                                <div class="class C6-B loc2">6-B</div>
+                                <div class="class C6-C loc3">6-C</div>
+                                <div class="class C6-D loc4">6-D</div>
+                                <div class="floornum">6F</div>
+                            </li>
+                            <li class="floor floor5">
+                                <div class="class C5-A loc1">5-A</div>
+                                <div class="class C5-B loc2">5-B</div>
+                                <div class="class C5-C loc3">5-C</div>
+                                <div class="class C5-D loc4">5-D</div>
+                                <div class="floornum">5F</div>
+                            </li>
+                            <li class="floor floor4">
+                                <div class="class C4-A loc1">4-A</div>
+                                <div class="class C4-B loc2">4-B</div>
+                                <div class="class C4-C loc3">4-C</div>
+                                <div class="class C4-D loc4">4-D</div>
+                                <div class="floornum">4F</div>
+                            </li>
+                            <li class="floor floor3">
+                                <div class="class C3-A loc1">3-A</div>
+                                <div class="class C3-B loc2">3-B</div>
+                                <div class="class C3-C loc3">3-C</div>
+                                <div class="floornum">3F</div>
+                            </li>
+                            <li class="floor floor2">
+                                <div class="class C2-A2 loc1">2-A</div>
+                                <div class="floornum">2F</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="slide-bar"></div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

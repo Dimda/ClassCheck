@@ -1,0 +1,93 @@
+/*サイドメニュー*/
+
+/* サイドメニュー ※リストのスタイルは省略 */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  padding-top: 20px;
+  text-align: left;
+  font-size: 13px;
+  background: #fffafa;
+  z-index: 1;
+}
+
+.side-menu > h1{
+    color:#555e64;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+fieldset{
+    box-sizing: border-box;
+    margin: 5px;
+    border: 4px solid #a1b91d;
+}
+
+legend{
+    font-size: 24px;
+    margin: auto;
+    color:#555e64;
+    
+}
+
+.items{
+    width:100%;
+    height:100%;
+    margin-left:35px;
+}
+
+.items {
+    color:#555e64;
+}
+
+.start{
+    margin-bottom: 5px;
+}
+
+.reset{
+    margin-left: 6px;
+    margin-top: 5px;
+    
+}
+
+.reset > label{
+    width: 100px;
+}
+
+.search > label{
+    float: right;
+    margin-right: 6px;
+}
+
+
+
+
+/* 開閉用ボタン ※ボタンの細かいスタイルは省略 */
+.side-menu-btn {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background: #ccc;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.side-menu-btn > img{
+    width: 100%;
+    height:100%;
+}
+
+/* サイドメニューオープン */
+.side-open .wrapper,
+.side-open .overlay {
+  -webkit-transform: translate3d(-300px, 0, 0);
+  transform: translate3d(-300px, 0, 0);
+}
+
