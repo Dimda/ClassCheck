@@ -148,6 +148,7 @@ body{
         height: 50%;
         width: 60%;
         list-style: none; 
+        color:pink;
     }
     .zoom > .class{
         word-wrap: break-word;
