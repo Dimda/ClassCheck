@@ -78,6 +78,7 @@ html,body{
     position: absolute;
     margin-top: 10px;
     margin-left: 7px;
+    margin-bottom:100px;
 }
 .contents p {
   margin-bottom: 50px;
