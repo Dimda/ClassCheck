@@ -24,8 +24,8 @@ ul,li{
     cursor:pointer;
     position:absolute;
     border:outset 2px gray;
-    width: 150px;
-    height:90px;
+    width:  40vw;
+    height: 10vh;
     transform: skew(-30deg);
     top: 10%;
     left: 10%;
@@ -36,7 +36,7 @@ ul,li{
     float:left;
     height:45%;
     width:22%;
-    font-size: 100%;
+    font-size: 4vmin;
     background-color:red;
     border:outset 3px;
     font-family: Impact, Charcoal, sans-serif;
@@ -69,7 +69,7 @@ ul,li{
     top: 100%;
     opacity: 0.9;
     transform: skew(30deg);
-    height: 34%;
+    height: 70%;
     width: 100%;
     z-index: 8;
 }
@@ -128,17 +128,21 @@ body{
     width: 60%;
     list-style: none; 
     z-index: 9;
-    
+    font-size: 200%;
 }
-.zoom.class{
+.zoom > .class{
     word-wrap: break-word;
     letter-spacing: 300px;
+    font-size: 4vmin;
+    width:15%;
+    padding-left:10%;
 }
-/*タブレット*/
+
+/*
 @media(min-width:768px) and (max-width:1024px){
     .floor{
-        width: 600px;
-        height: 150px;
+        width: 70vw;
+        height: 17vh;
     }
     .zoom{
         transform: skew(0deg);
@@ -159,7 +163,8 @@ body{
         font-size: 40px;
     }
 }
-/*PC*/
+*/
+/*
 @media(min-width:1025px){
     .floor{
         width: 800px;
@@ -178,3 +183,4 @@ body{
         font-size: 100%;
     }
 }
+*/
