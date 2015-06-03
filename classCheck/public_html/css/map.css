@@ -23,12 +23,13 @@ ul,li{
 .floor{
     cursor:pointer;
     position:absolute;
-    border:outset 2px gray;
+    border:solid 2px gray;
     width:  40vw;
     height: 10vh;
     transform: skew(-30deg);
     top: 10%;
     left: 10%;
+    
 }
 
 .class{
@@ -38,16 +39,15 @@ ul,li{
     width:22%;
     font-size: 4vmin;
     background-color:red;
-    border:outset 3px;
     font-family: Impact, Charcoal, sans-serif;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
 }
-.class 
-
 .loc1{
-    
+    margin-left: 3%;
 }
 .loc2{   
-    left: 45%;
+    left: 43%;
 }
 .loc3{
     left: 70%;
@@ -60,7 +60,7 @@ ul,li{
 }
 .floornum{
     position:absolute;
-    text-align: center;
+    text-align: left;
     border:outset 3px yellow;
     font-size: 27px;
     color:yellow;
@@ -132,7 +132,7 @@ body{
 }
 .zoom > .class{
     word-wrap: break-word;
-    letter-spacing: 300px;
+    letter-spacing: 80px;
     font-size: 4vmin;
     width:15%;
     padding-left:10%;
