@@ -106,8 +106,21 @@ html,body{
     background-color: cyan;
 }
 
+.slide-bar input{
+    -webkit-appearance: slider-vertical;
+    width: 8vh;
+    height: 70vh;
+    margin-top: 2vh;
+}
 
-/*@media(min-width:360px) and (max-width:420px){
+
+
+
+
+
+
+/*-----------------RESPONSIVE------------------
+@media(min-width:360px) and (max-width:420px){
     .main_contents{
         width:340px;
         height:408px;
