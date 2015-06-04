@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -64,7 +65,7 @@ and open the template in the editor.
                 </fieldset>
                 <fieldset>
                     <legend id="time">時間</legend>
-                    <!--<div class="items">
+                    <div class="items">
                         <div class="start">
                             <select name="start_h">
                                 <option>09</option>
@@ -114,11 +115,11 @@ and open the template in the editor.
                                 <option>50</option>
                             </select>
                         </div>
-                    </div>-->
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>教室</legend>
-                    <!--<div class="items">
+                    <div class="items">
                         <div class="radio">
                             <input type="radio" name="type" id="type1" value="1" >
                             <label for="type1">普通<p><br></p></label>
@@ -127,17 +128,15 @@ and open the template in the editor.
                             <input type="radio" name="type" id="type3" value="3" >
                             <label for="type3">実習(win)</label>
                         </div>
-                    </div>-->
+                    </div>
                 </fieldset>
-                <div>
-                    <div class="radio reset" >
-                        <input type="reset" name="reset" id="reset" >
-                        <label for="reset">初期設定に戻す</label>
-                    </div>
-                    <div class="radio search">
-                        <input type="submit" name="search" id="search" >
-                        <label for="search">検索</label>
-                    </div>
+                <div class="radio reset" >
+                    <input type="reset" name="reset" id="reset" >
+                    <label for="reset">初期設定に戻す</label>
+                </div>
+                <div class="radio search">
+                    <input type="submit" name="search" id="search" >
+                    <label for="search">検索</label>
                 </div>
             </form>
         </div>
@@ -153,7 +152,7 @@ and open the template in the editor.
                 <section class="main_contents">
                     <div class="main"><ul class="map">
                     <li class="floor floor9">
-                        <div class="class ">9-D1</div>
+                        <div class="class loc1">9-D1</div>
                         <div class="class loc2">9-D2</div>
                         <div class="floornum">9F</div>
                     </li>
@@ -169,7 +168,7 @@ and open the template in the editor.
                         <div class="class loc1">7-A</div>
                         <div class="class loc2">7-B</div>
                         <div class="class loc3">7-C</div>
-                        <div class="class ">7-D</div>
+                        <div class="class loc4">7-D</div>
                         <div class="floornum">7F</div>
                     </li>
                     <li class="floor floor6">
@@ -203,14 +202,28 @@ and open the template in the editor.
                         <div class="class C2-A2 loc1">2-A2</div>
                         <div class="floornum">2F</div>
                     </li>
+                    
                 </ul></div>
-                    <div class="slide-bar">スライドバー</div>
+                    <div class="slide-bar">
+                        <input type=range min=2 max=9 value=2  list="floorRange">
+                        <datalist id="floorRange">
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                        </datalist>
+                    </div>
                 </section>
-                <!---->
             <footer class="footer">
                 フッター
+                
             </footer>
         </div>
        
     </body>
 </html>
+>>>>>>> origin/master
