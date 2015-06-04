@@ -11,12 +11,16 @@
   font-size: 13px;
   background: #fffafa;
   z-index: 1;
+  padding: 5vh;
+  padding-left: 2vh;
+  padding-right: 2vh; 
+  box-sizing: border-box;
 }
 
 .s_header{
     width: 100%;
-    height: 15vh;
-    margin: 5vh;
+    height: 10vh;
+   
 }
 
 .s_header > h1{
@@ -28,33 +32,55 @@
 
 .setting{
     position: absolute;
-    top:15vh;
-}
-
-
-
-fieldset{
-    box-sizing: border-box;
-    margin: 5px;
-    border: 4px solid #a1b91d;
+    //top:15vh;
 }
 
 legend{
-    font-size: 24px;
+    font-size: 7vmin;
     margin: auto;
     color:#555e64;
     
+}
+
+fieldset{
+    box-sizing: border-box;
+    border: 4px solid #a1b91d;
+    width: 84vw;
+}
+
+/*曜日*/
+fieldset:nth-child(1){
+    height: 30vh;
+    padding-left: 2vw;
+}
+fieldset:nth-child(1) > div > div > label{
+    width: 20vmin;
+    height: 2vh}
+
+/*時間*/
+fieldset:nth-child(2){
+    height: 15vh;
+}
+
+/*教室*/
+fieldset:nth-child(3){
+    height: 20vh;
+}
+
+.setting > div{
+    margin-top: 2vh;
+    width: 100%;
+    height: 10vh;
+   // background-color: blue;
 }
 
 .items{
     width:100%;
     height:100%;
     //margin-left:35px;
+     color:#555e64;
 }
 
-.items {
-    color:#555e64;
-}
 
 .start{
     margin-bottom: 5px;
@@ -67,12 +93,16 @@ legend{
 }
 
 .reset > label{
-    width: 100px;
+    width: 40vw;
+    height: 7vh;
+    font-size: 7vmin;
 }
 
 .search > label{
     float: right;
+    height: 7vh;
     margin-right: 6px;
+    font-size: 7vmin;
 }
 
 
