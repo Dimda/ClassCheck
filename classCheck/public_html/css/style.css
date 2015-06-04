@@ -16,14 +16,15 @@ html,body{
 .wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 90vw;
   text-align: center;
   font-size: 13px;
   background: #F8F8F8;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   z-index: 2;
-   background-image: url("../img/background-img-main.jpg");
+  background-image: url("../img/background-img-main.jpg");
+
 }
 /* メインコンテンツ内のスタイル ※デザインに併せて適当に */
 .header {
@@ -114,13 +115,7 @@ html,body{
 }
 
 
-
-
-
-
-
-/*-----------------RESPONSIVE------------------
-@media(min-width:360px) and (max-width:420px){
+/*@media(min-width:360px) and (max-width:420px){
     .main_contents{
         width:340px;
         height:408px;
