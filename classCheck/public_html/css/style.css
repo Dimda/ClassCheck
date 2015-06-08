@@ -12,11 +12,11 @@ html,body{
     height: 100vh;
 }
 
-/* メインコンテンツ */
+/* メインコン�?ン�? */
 .wrapper {
   position: relative;
-  width: 100%;
-  height: 90vw;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
   font-size: 13px;
   background: #F8F8F8;
@@ -25,7 +25,7 @@ html,body{
   z-index: 2;
   background-image: url("../img/background-img-main.jpg");
 }
-/* メインコンテンツ内のスタイル ※デザインに併せて適当に */
+/* メインコン�?ン�?�?のスタイル ※�?ザインに併せて適当に */
 .header {
   width: 100vw;
   height: 15vh;
@@ -44,9 +44,9 @@ html,body{
 .side-menu-btn {
   position: fixed;
   top: 2vh;
-  right: 2vh;
-  width: 10vh;
-  height: 10vh;
+  left: 83vw;
+  width: 10vmin;
+  height: 10vmin;
   padding: 5px;
   background: #ccc;
   cursor: pointer;
@@ -60,7 +60,7 @@ html,body{
 .contents {
    
     width: 100%;
-    height: 75vh;
+    height: 360px;
     box-sizing: border-box;
 }
 
@@ -114,13 +114,7 @@ html,body{
 }
 
 
-
-
-
-
-
-/*-----------------RESPONSIVE------------------
-@media(min-width:360px) and (max-width:420px){
+/*@media(min-width:360px) and (max-width:420px){
     .main_contents{
         width:340px;
         height:408px;
@@ -197,3 +191,4 @@ html,body{
         height: 250px;  
     }
 }*/
+

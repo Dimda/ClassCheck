@@ -3,11 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/44/Documents/GitHub/ClassCheck/classCheck/public_html/css/radio.css</file>
             <file>file:/C:/Users/44/Documents/GitHub/ClassCheck/classCheck/public_html/index.html</file>
             <file>file:/C:/Users/44/Documents/GitHub/ClassCheck/classCheck/public_html/Scripts/map.js</file>
             <file>file:/C:/Users/44/Documents/GitHub/ClassCheck/classCheck/public_html/css/style.css</file>
             <file>file:/C:/Users/44/Documents/GitHub/ClassCheck/classCheck/public_html/css/side.css</file>
+=======
+            <file>file:/E:/Documents/GitHub/ClassCheck/classCheck/public_html/css/radio.css</file>
+            <file>file:/E:/Documents/GitHub/ClassCheck/classCheck/public_html/Scripts/map.js</file>
+            <file>file:/E:/Documents/GitHub/ClassCheck/classCheck/public_html/css/map.css</file>
+            <file>file:/E:/Documents/GitHub/ClassCheck/classCheck/public_html/css/style.css</file>
+            <file>file:/E:/Documents/GitHub/ClassCheck/classCheck/public_html/index.html</file>
+>>>>>>> 64354b30ad6e4d651b47cdd5b558eb0fbe4f611b
         </group>
     </open-files>
 </project-private>

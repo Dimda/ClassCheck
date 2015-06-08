@@ -41,7 +41,7 @@ ul,li{
     background-color:red;
     font-family: Impact, Charcoal, sans-serif;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
+    
 }
 .loc1{
     margin-left: 3%;
@@ -137,14 +137,13 @@ body{
 }
 .zoom > .class{
 
-    /*word-wrap: break-word;
-    letter-spacing: 80px;*/
     font-size: 6vmin;
     width:25%;
     font-weight: bold;
-    /*padding-left:10%;*/
     height: 30%;
-    padding-top: 8%;
+    padding-top: 6vmin;
+    margin-top: 1vmin;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
 }
 
 /*
