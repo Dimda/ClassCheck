@@ -146,6 +146,10 @@ body{
     box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
 }
 
+
+.available{
+	background-color:green;
+}
 /*
 @media(min-width:768px) and (max-width:1024px){
     .floor{

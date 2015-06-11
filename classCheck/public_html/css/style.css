@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin: 0;
 
 }
@@ -12,7 +12,7 @@ html,body{
     height: 100vh;
 }
 
-/* メインコン�?ン�? */
+/* 繝｡繧､繝ｳ繧ｳ繝ｳ繝?繝ｳ繝? */
 .wrapper {
   position: relative;
   width: 100vw;
@@ -25,7 +25,7 @@ html,body{
   z-index: 2;
   background-image: url("../img/background-img-main.jpg");
 }
-/* メインコン�?ン�?�?のスタイル ※�?ザインに併せて適当に */
+/* 繝｡繧､繝ｳ繧ｳ繝ｳ繝?繝ｳ繝?蜀?縺ｮ繧ｹ繧ｿ繧､繝ｫ 窶ｻ繝?繧ｶ繧､繝ｳ縺ｫ菴ｵ縺帙※驕ｩ蠖薙↓ */
 .header {
   width: 100vw;
   height: 15vh;
@@ -40,7 +40,7 @@ html,body{
   font-size: 5vh;
 }
 
-/* 開閉用ボタン ※ボタンの細かいスタイルは省略 */
+/* 髢矩哩逕ｨ繝懊ち繝ｳ 窶ｻ繝懊ち繝ｳ縺ｮ邏ｰ縺九＞繧ｹ繧ｿ繧､繝ｫ縺ｯ逵∫払 */
 .side-menu-btn {
   position: fixed;
   top: 2vh;
