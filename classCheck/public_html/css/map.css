@@ -25,7 +25,7 @@ ul,li{
     position:absolute;
     border:solid 2px gray;
     width:  40vw;
-    height: 10vh;
+    height: 9vh;
     transform: skew(-30deg);
     top: 10%;
     left: 10%;
