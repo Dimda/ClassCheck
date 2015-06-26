@@ -12,23 +12,20 @@ $(function(){
                 toggleZoom(this);
                 resetClassRoom();
         });
-      $(window).scroll(function(){
-        $(".class").css("color", "blue");
-    });
 });
 
 var addActivated = function(classroom){
       classroom.addClass("activated");
       classroom.css("transform", "rotateY(360deg)");
       classroom.text("TEST");
-      
+
 }
 
 var removeActivated = function(classroom){
       classroom.removeClass("activated");
       classroom.css("transform", "rotateY(0deg)");
       classroom.text(classroom.attr('id'));
-     
+
 }
 
 var toggleZoom = function(elem){
@@ -42,6 +39,6 @@ var resetClassRoom = function(){
     $(".activated").each(function(index,elem){
                       $(elem).removeClass("activated");
                       $(elem).text($(elem).attr('id'));
-     
+
       });
 }
