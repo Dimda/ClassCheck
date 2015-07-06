@@ -8,6 +8,7 @@
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
+    font-family: "Lucida Console", Times, serif;
 }
 ul,li{
     list-style: none;
@@ -34,13 +35,13 @@ ul,li{
 
 .class{
     position:absolute;
-    float:left;
-    height:45%;
-    width:22%;
+    /*height:45%;
+    width:22%;*/
     font-size: 4vmin;
     background-color:red;
     font-family: Impact, Charcoal, sans-serif;
     border-radius: 10px;
+    white-space:pre-wrap;
     opacity: 0;
 }
 .class:hover{
@@ -71,6 +72,7 @@ ul,li{
     background-color:brown;
     top: 100%;
     opacity: 1;
+    margin-left: 1vmin;
     -webkit-transform: skew(30deg);
     -o-transform: skew(30deg);
     height: 70%;
