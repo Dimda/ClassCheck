@@ -38,7 +38,7 @@ ul,li{
     /*height:45%;
     width:22%;*/
     font-size: 4vmin;
-    background-color:red;
+    background-color:green;
     font-family: Impact, Charcoal, sans-serif;
     border-radius: 10px;
     white-space:pre-wrap;
@@ -46,6 +46,9 @@ ul,li{
 }
 .class:hover{
   border: solid 2px yellow;
+}
+.unaviable{
+  color:red;
 }
 .loc1{
     margin-left: 3%;
@@ -157,7 +160,6 @@ body{
     opacity: 1;
 }
 
-
-.available{
-	background-color:green;
+.unavailable{
+	background-color:red;
 }
