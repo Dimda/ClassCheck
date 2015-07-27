@@ -23,7 +23,6 @@ html,body{
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   z-index: 2;
-  background-image: url("../img/background-img-main.jpg");
 }
 /* 繝｡繧､繝ｳ繧ｳ繝ｳ繝?繝ｳ繝?蜀?縺ｮ繧ｹ繧ｿ繧､繝ｫ 窶ｻ繝?繧ｶ繧､繝ｳ縺ｫ菴ｵ縺帙※驕ｩ蠖薙↓ */
 .header {
@@ -58,13 +57,13 @@ html,body{
     height:100%;
 }
 .contents {
-   
+
     width: 100%;
     height: 360px;
     box-sizing: border-box;
 }
 
-.main_contents{ 
+.main_contents{
     margin-left: auto;
     margin-right: auto;
     width: 90vw;
@@ -74,7 +73,8 @@ html,body{
 .main{
     float: left;
     background-color: red;
-    width: 72vw;
+
+    width: 100%;
     height: 100%;
 }
 
@@ -93,7 +93,7 @@ html,body{
     position: absolute;
     margin-top: 10px;
     margin-left: 7px;
-  
+
 }
 .contents p {
   margin-bottom: 50px;
@@ -139,31 +139,31 @@ html,body{
         height: 80px;
         padding: 30px;
     }
-   
+
     .header h1{
         font-size: 25px;
     }
-    
+
     .side-menu-btn{
         top:10px;
         right: 10px;
         width : 50px;
         height: 50px;
     }
-    
+
      .main_contents{
         width:480px;
         height: 588px;
     }
     .main{
-        width: 420px;   
+        width: 420px;
     }
     .footer{
-        height: 150px;  
+        height: 150px;
     }
-    
+
     .side-menu{}
-    
+
 }
 
 @media(min-width:601px) and (max-width:700px){
@@ -172,10 +172,10 @@ html,body{
         height: 696px;
     }
     .main{
-        width: 520px;   
+        width: 520px;
     }
     .footer{
-        height: 150px;  
+        height: 150px;
     }
 }
 
@@ -185,10 +185,9 @@ html,body{
         height: 936px;
     }
     .main{
-        width: 620px;   
+        width: 620px;
     }
     .footer{
-        height: 250px;  
+        height: 250px;
     }
 }*/
-

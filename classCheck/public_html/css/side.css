@@ -13,21 +13,21 @@
   z-index: 1;
   padding: 5vh;
   padding-left: 2vh;
-  padding-right: 2vh; 
+  padding-right: 2vh;
   box-sizing: border-box;
 }
 
 .s_header{
     width: 100%;
     height: 10vh;
-   
+
 }
 
 .s_header > h1{
     color:#555e64;
     font-size: 5vh;
     //margin-bottom: 10px;
-    
+
 }
 
 .setting{
@@ -39,7 +39,7 @@ legend{
     font-size: 7vmin;
     margin: auto;
     color:#555e64;
-    
+
 }
 
 fieldset{
@@ -89,7 +89,7 @@ fieldset:nth-child(3){
 .reset{
     margin-left: 6px;
     margin-top: 5px;
-    
+
 }
 
 .reset > label{
@@ -113,4 +113,3 @@ fieldset:nth-child(3){
   -webkit-transform: translate3d(-90vw, 0, 0);
   transform: translate3d(-90vw, 0, 0);
 }
-

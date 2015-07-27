@@ -3,7 +3,7 @@ $(function(){
   var classrooms = {};
   initClassrooms(classrooms);
 
-  classrooms["8-A"].aviability = false;
+  classrooms["8-A"].availability = false;
   classrooms["8-A"].purpose = "プレゼンテーション技法";
   classrooms["8-A"].user = "新井";
 
@@ -28,37 +28,41 @@ function nextChar(c) {
     return String.fromCharCode(c.charCodeAt(0) + 1);
 }
 
+var initClassrooms = function(classrooms){
+  for(i = 2; i <= 8; i++){
+    var char = 'A';
+    for(j = 0; j < 4; j++){
+      classrooms[i + "-" + char] = {};
+      classrooms[i + "-" + char].availability = true;
+      char = nextChar(char);
+    }
+
+    classrooms["9-D1"] = {}; classrooms["9-D1"].availability = true;
+    classrooms["9-D2"] = {}; classrooms["9-D2"].availability = true;
+  }
+  return classrooms;
+}
+
 function checkClassrooms(classrooms){
   for(i = 2; i <= 8; i++){
     var char = 'A';
     for(j = 0; j < 4; j++){
-      if(classrooms[i + "-" + char].aviability == false){
+      if(classrooms[i + "-" + char].availability == false){
         $("#" + i + "-" + char).addClass("unavailable");
       }
       char = nextChar(char);
     }
   }
+  classrooms["9-D1"].availability == false ? $("#9-D1").addClass("unavailable") : null;
+  classrooms["9-D2"].availability == false ? $("#9-D2").addClass("unavailable") : null;
 }
-
-var initClassrooms = function(classrooms){
-  for(i = 2; i <= 8; i++){
-    var char = 'A';
-    for(j = 0; j < 4; j++){
-      classrooms[i + "-" + char]={};
-      classrooms[i + "-" + char].aviability = true;
-      char = nextChar(char);
-    }
-  }
-  return classrooms;
-}
-
 
 var addActivated = function(target, classrooms){
       var id = target.attr('id');
       target.addClass("activated");
       target.css({"transform" : "rotateY(360deg)"});
 
-      if(classrooms[id].aviability == false){
+      if(classrooms[id].availability == false){
         target.css({
           "font-size" : "4vmin",
           "padding" : "0 0 6vmin 0"
